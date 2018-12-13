@@ -1,0 +1,23 @@
+{
+ "manifest_version": 2,
+ "name": "Redirect Tool",
+ "description": "Redirect to different url as per the mappings listed",
+ "version": "1",
+ "author": "Aasma Garg",
+ "browser_action": {
+    "default_title": "Redirect"
+ },
+ "commands": {
+   "_execute_browser_action": {
+     "suggested_key": {
+       "default": "Ctrl+Shift+R",
+       "mac": "MacCtrl+Shift+R"
+     }
+   }
+ },
+ "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+ },
+ "permissions": ["tabs"]
+}
